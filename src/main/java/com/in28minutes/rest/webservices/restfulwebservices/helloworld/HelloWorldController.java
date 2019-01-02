@@ -1,7 +1,5 @@
 package com.in28minutes.rest.webservices.restfulwebservices.helloworld;
 
-import javax.management.RuntimeErrorException;
-
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,7 +20,7 @@ public class HelloWorldController {
     @GetMapping(path="/hello-world-bean")
     public HelloWorldBean helloWorldBean(){
         
-        Error e = new Error("Error Variable");
+        // Error e = new Error("Error Variable");
         //throw new RuntimeErrorException(e,"Some Error has Happened! Contact support at ****");
         return new HelloWorldBean("Hello World - Changed ");
     }
